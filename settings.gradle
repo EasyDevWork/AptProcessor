@@ -1,0 +1,3 @@
+rootProject.name='EasyApt'
+include ':app'
+include ':aptprocessor'

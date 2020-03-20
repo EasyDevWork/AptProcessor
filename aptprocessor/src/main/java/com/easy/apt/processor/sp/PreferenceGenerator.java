@@ -10,7 +10,6 @@ import com.easy.apt.annotation.sp.Key;
 import com.easy.apt.annotation.sp.Preferences;
 import com.easy.apt.annotation.sp.Prototype;
 import com.easy.apt.annotation.sp.Remove;
-import com.easy.apt.processor.TypeUtil;
 import com.easy.apt.processor.sp.conveter.KeyConverter;
 import com.easy.apt.processor.sp.conveter.SimpleKeyConverter;
 import com.easy.apt.processor.sp.conveter.SimpleValueConverter;

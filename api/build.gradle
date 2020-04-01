@@ -30,7 +30,8 @@ android {
 }
 
 dependencies {
-    implementation project(':annotation')
+//    implementation project(':annotation')
+    implementation 'com.github.EasyDevWork:AptProcessor:an-1.0.2'
 
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'

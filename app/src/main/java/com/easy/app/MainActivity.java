@@ -1,22 +1,27 @@
 package com.easy.app;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
+import com.easy.app.annotation.ActivityInject;
+import com.easy.app.databinding.ActivityMainBinding;
 import com.easy.apt.lib.SharePreference;
+import com.easy.framework.base.BaseActivity;
 
+@ActivityInject
 @Route(path = "/app/MainActivity")
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity<MainPresenter, ActivityMainBinding> {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    public int getLayoutId() {
+        return R.layout.activity_main;
+    }
+
+    @Override
+    public void initView() {
+        Toast.makeText(MainActivity.this, presenter.getTest(), Toast.LENGTH_SHORT).show();
     }
 
     public void goHome(View view) {

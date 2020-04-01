@@ -1,4 +1,12 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+
+repositories {
+    maven { url "https://jitpack.io" }
+    mavenCentral()
+    google()
+    jcenter()
+}
 
 android {
     compileSdkVersion 28
@@ -38,5 +46,5 @@ dependencies {
     implementation 'com.github.EasyDevWork:AptProcessor:an-1.0.2'
 
     annotationProcessor project(':compiler')
-//    annotationProcessor 'com.github.EasyDevWork:AptProcessor:co-1.0.2'
+//    annotationProcessor 'com.github.EasyDevWork:AptProcessor:co-1.0.3'
 }

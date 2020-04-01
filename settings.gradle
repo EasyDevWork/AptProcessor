@@ -1,5 +1,5 @@
 include ':app'
 include ':api'
+include ':annotation'
 include ':compiler'
-//include ':annotation'
 include ':Framework'

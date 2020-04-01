@@ -14,8 +14,8 @@ compileJava {
 }
 
 dependencies {
-//    implementation project(':annotation')
-    implementation 'com.github.EasyDevWork:AptProcessor:an-1.0.2'
+    implementation project(':annotation')
+//    implementation 'com.github.EasyDevWork:AptProcessor:an-1.0.2'
 
     implementation 'com.google.auto.service:auto-service:1.0-rc3'
     implementation 'com.squareup:javapoet:1.10.0'

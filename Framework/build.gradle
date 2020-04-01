@@ -50,5 +50,5 @@ dependencies {
     annotationProcessor 'com.google.dagger:dagger-compiler:2.10'
 
     implementation project(':api')
-//    implementation 'com.github.EasyDevWork:AptProcessor:1.0.2'
+//    implementation 'com.github.EasyDevWork:AptProcessor:2.0.1'
 }

@@ -1,11 +1,11 @@
 apply plugin: 'java'
-//apply plugin: 'com.github.dcendents.android-maven'
-//
-//repositories {
-//    maven { url "https://jitpack.io" }
-//    google()
-//    jcenter()
-//}
+apply plugin: 'com.github.dcendents.android-maven'
+
+repositories {
+    maven { url "https://jitpack.io" }
+    google()
+    jcenter()
+}
 
 compileJava {
     sourceCompatibility = '1.8'

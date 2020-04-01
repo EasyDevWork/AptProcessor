@@ -1,4 +1,4 @@
-package com.easy.apt;
+package com.easy.app;
 
 import android.app.Application;
 

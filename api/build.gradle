@@ -31,8 +31,11 @@ android {
 
 dependencies {
     implementation project(':annotation')
-    annotationProcessor project(':compiler')
+
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.alibaba:fastjson:1.1.71.android'
+
+    annotationProcessor project(':compiler')
+//    annotationProcessor 'com.github.EasyDevWork:AptProcessor:compiler:1.0.2'
 }

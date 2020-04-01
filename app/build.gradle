@@ -11,7 +11,11 @@ android {
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [ AROUTER_MODULE_NAME : project.getName() ]
+            }
+        }
     }
 
     buildTypes {
@@ -27,7 +31,12 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
 //    annotationProcessor project(':aptprocessor')
-    annotationProcessor 'com.github.EasyDevWork:AptProcessor:1.0.0'
+//    annotationProcessor 'com.github.EasyDevWork:AptProcessor:1.0.0'
+
+    implementation project(':arouter-annotation')
+    implementation project(':arouter-api')
+    annotationProcessor project(':arouter-compiler')
 }

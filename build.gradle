@@ -3,12 +3,8 @@
 buildscript {
     
     repositories {
-        maven {
-            url "https://oss.sonatype.org/content/repositories/snapshots/"
-        }
-        maven {
-            url 'http://dl.bintray.com/jetbrains/intellij-plugin-service'
-        }
+        maven { url "https://repo.eclipse.org/content/repositories/paho-snapshots/" }
+        maven { url "http://maven.aliyun.com/nexus/content/repositories/releases" }
         mavenCentral()
         google()
         jcenter()

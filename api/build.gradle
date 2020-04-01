@@ -43,8 +43,5 @@ dependencies {
     implementation 'com.alibaba:fastjson:1.1.71.android'
 
     implementation project(':annotation')
-//    implementation 'com.github.EasyDevWork:AptProcessor:an-1.0.2'
-
     annotationProcessor project(':compiler')
-//    annotationProcessor 'com.github.EasyDevWork:AptProcessor:co-1.0.3'
 }

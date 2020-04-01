@@ -51,6 +51,4 @@ dependencies {
 
 //    implementation project(':api')
     implementation 'com.github.EasyDevWork:AptProcessor:1.0.1'
-    annotationProcessor project(':compiler')
-//    annotationProcessor 'com.github.EasyDevWork:AptProcessor:co-1.0.3'
 }

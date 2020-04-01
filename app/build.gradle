@@ -40,12 +40,12 @@ dependencies {
     implementation 'com.google.dagger:dagger:2.10'
     annotationProcessor 'com.google.dagger:dagger-compiler:2.10'
 
-    implementation project(':Framework')
-
 //    implementation project(':api')
 //    implementation project(':annotation')
     implementation 'com.github.EasyDevWork:AptProcessor:1.0.1'
 
     annotationProcessor project(':compiler')
 //    annotationProcessor 'com.github.EasyDevWork:AptProcessor:co-1.0.3'
+
+    implementation project(':Framework')
 }

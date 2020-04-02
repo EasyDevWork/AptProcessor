@@ -3,11 +3,12 @@ package com.easy.app;
 
 import androidx.annotation.Keep;
 
-import com.easy.app.annotation.sp.Clear;
-import com.easy.app.annotation.sp.Default;
-import com.easy.app.annotation.sp.Expired;
-import com.easy.app.annotation.sp.Preferences;
-import com.easy.app.annotation.sp.Remove;
+import com.easy.apt.annotation.sp.Clear;
+import com.easy.apt.annotation.sp.Default;
+import com.easy.apt.annotation.sp.Expired;
+import com.easy.apt.annotation.sp.Preferences;
+import com.easy.apt.annotation.sp.Remove;
+
 
 @Preferences(name = "defaultSp")
 @Keep//keep 避免混淆

@@ -2,7 +2,7 @@
 package com.easy.apt.processor;
 
 
-import com.easy.app.annotation.sp.Preferences;
+import com.easy.apt.annotation.sp.Preferences;
 import com.easy.apt.processor.sp.PreferenceGenerator;
 import com.google.auto.service.AutoService;
 

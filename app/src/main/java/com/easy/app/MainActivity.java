@@ -5,8 +5,8 @@ import android.widget.Toast;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
-import com.easy.app.annotation.ActivityInject;
 import com.easy.app.databinding.ActivityMainBinding;
+import com.easy.apt.annotation.ActivityInject;
 import com.easy.apt.lib.SharePreference;
 import com.easy.framework.base.BaseActivity;
 

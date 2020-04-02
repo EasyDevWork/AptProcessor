@@ -1,15 +1,16 @@
 
 package com.easy.apt.processor.sp;
 
-import com.easy.app.annotation.sp.Apply;
-import com.easy.app.annotation.sp.Clear;
-import com.easy.app.annotation.sp.Commit;
-import com.easy.app.annotation.sp.Default;
-import com.easy.app.annotation.sp.Expired;
-import com.easy.app.annotation.sp.Key;
-import com.easy.app.annotation.sp.Preferences;
-import com.easy.app.annotation.sp.Prototype;
-import com.easy.app.annotation.sp.Remove;
+
+import com.easy.apt.annotation.sp.Apply;
+import com.easy.apt.annotation.sp.Clear;
+import com.easy.apt.annotation.sp.Commit;
+import com.easy.apt.annotation.sp.Default;
+import com.easy.apt.annotation.sp.Expired;
+import com.easy.apt.annotation.sp.Key;
+import com.easy.apt.annotation.sp.Preferences;
+import com.easy.apt.annotation.sp.Prototype;
+import com.easy.apt.annotation.sp.Remove;
 import com.easy.apt.processor.sp.conveter.KeyConverter;
 import com.easy.apt.processor.sp.conveter.SimpleKeyConverter;
 import com.easy.apt.processor.sp.conveter.SimpleValueConverter;

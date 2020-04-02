@@ -1,4 +1,4 @@
-package com.easy.app.annotation;
+package com.easy.apt.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

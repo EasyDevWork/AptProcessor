@@ -1,7 +1,7 @@
 package com.easy.apt.processor;
 
-import com.easy.app.annotation.ActivityInject;
-import com.easy.app.annotation.FragmentInject;
+import com.easy.apt.annotation.ActivityInject;
+import com.easy.apt.annotation.FragmentInject;
 import com.google.auto.service.AutoService;
 
 import java.util.HashSet;

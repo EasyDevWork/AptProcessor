@@ -1,5 +1,5 @@
 
-package com.easy.app.annotation.sp;
+package com.easy.apt.annotation.sp;
 
 import java.lang.annotation.Target;
 

@@ -287,7 +287,7 @@ public class PreferenceGenerator extends ElementGenerator {
                         methodBuilder
                                 .addStatement(
                                         "$T converter = mConverterFactory.fromType($T.class)",
-                                        ParameterizedTypeName.get(ClassName.get("com.easy.apt.lib.Converter","Factory"),
+                                        ParameterizedTypeName.get(ClassName.get("com.easy.apt.lib","Converter"),
                                                 paramTypeName,
                                                 ClassName.get(String.class)),
                                         paramTypeName);
@@ -299,7 +299,7 @@ public class PreferenceGenerator extends ElementGenerator {
                             methodBuilder
                                     .addStatement(
                                             "$T converter = mConverterFactory.fromType($L)",
-                                            ParameterizedTypeName.get(ClassName.get("com.easy.apt.lib.Converter","Factory"),
+                                            ParameterizedTypeName.get(ClassName.get("com.easy.apt.lib","Converter"),
                                                     paramTypeName,
                                                     ClassName.get(String.class)),
                                             newParameterizedTypeCode);
@@ -311,7 +311,7 @@ public class PreferenceGenerator extends ElementGenerator {
                             methodBuilder
                                     .addStatement(
                                             "$T converter = mConverterFactory.fromType($L)",
-                                            ParameterizedTypeName.get(ClassName.get("com.easy.apt.lib.Converter","Factory"),
+                                            ParameterizedTypeName.get(ClassName.get("com.easy.apt.lib","Converter"),
                                                     paramTypeName,
                                                     ClassName.get(String.class)),
                                             GenericArrayTypeTemplate.build(newParameterizedTypeCode));
@@ -352,7 +352,7 @@ public class PreferenceGenerator extends ElementGenerator {
                         // raw class type
                         methodBuilder
                                 .addStatement("$T converter = mConverterFactory.toType($T.class)",
-                                        ParameterizedTypeName.get(ClassName.get("com.easy.apt.lib.Converter","Factory"),
+                                        ParameterizedTypeName.get(ClassName.get("com.easy.apt.lib","Converter"),
                                                 ClassName.get(String.class),
                                                 returnTypeName),
                                         returnTypeName);
@@ -363,7 +363,7 @@ public class PreferenceGenerator extends ElementGenerator {
                             String newParameterizedTypeCode = buildNewParameterizedTypeCode(parameterizedTypeName);
                             methodBuilder
                                     .addStatement("$T converter = mConverterFactory.toType($L)",
-                                            ParameterizedTypeName.get(ClassName.get("com.easy.apt.lib.Converter","Factory"),
+                                            ParameterizedTypeName.get(ClassName.get("com.easy.apt.lib","Converter"),
                                                     ClassName.get(String.class),
                                                     returnTypeName),
                                             newParameterizedTypeCode);
@@ -375,7 +375,7 @@ public class PreferenceGenerator extends ElementGenerator {
                             String newParameterizedTypeCode = buildNewParameterizedTypeCode(parameterizedTypeName);
                             methodBuilder
                                     .addStatement("$T converter = mConverterFactory.toType($L)",
-                                            ParameterizedTypeName.get(ClassName.get("com.easy.apt.lib.Converter","Factory"),
+                                            ParameterizedTypeName.get(ClassName.get("com.easy.apt.lib","Converter"),
                                                     ClassName.get(String.class),
                                                     returnTypeName),
                                             GenericArrayTypeTemplate.build(newParameterizedTypeCode));

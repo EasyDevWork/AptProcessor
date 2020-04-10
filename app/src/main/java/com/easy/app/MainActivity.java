@@ -33,4 +33,17 @@ public class MainActivity extends BaseActivity<MainPresenter, ActivityMainBindin
         appSp.setGoGuide(false);
         Toast.makeText(MainActivity.this, appSp.isGoGuide() + "", Toast.LENGTH_SHORT).show();
     }
+
+    public void setAccount(View view) {
+        AppSharePreferences appSp = SharePreference.get(MainActivity.this, AppSharePreferences.class);
+        Accounts accounts = new Accounts();
+        accounts.setAge(222);
+        accounts.setName("ddd");
+        appSp.setUserInfo(accounts);
+    }
+
+    public void getAccount(View view) {
+        AppSharePreferences appSp = SharePreference.get(MainActivity.this, AppSharePreferences.class);
+        Toast.makeText(MainActivity.this, appSp.getUserInfo().toString(), Toast.LENGTH_SHORT).show();
+    }
 }

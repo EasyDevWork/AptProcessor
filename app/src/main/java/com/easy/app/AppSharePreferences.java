@@ -25,4 +25,8 @@ public interface AppSharePreferences {
 
     @Remove
     void removeUsername();
+
+    void setUserInfo(Accounts account);
+
+    Accounts getUserInfo();
 }

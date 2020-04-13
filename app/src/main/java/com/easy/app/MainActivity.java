@@ -7,6 +7,7 @@ import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.easy.app.databinding.ActivityMainBinding;
 import com.easy.apt.annotation.ActivityInject;
+import com.easy.apt.annotation.SingleClick;
 import com.easy.apt.lib.SharePreference;
 import com.easy.framework.base.BaseActivity;
 
@@ -34,6 +35,7 @@ public class MainActivity extends BaseActivity<MainPresenter, ActivityMainBindin
         Toast.makeText(MainActivity.this, appSp.isGoGuide() + "", Toast.LENGTH_SHORT).show();
     }
 
+    @SingleClick
     public void setAccount(View view) {
         AppSharePreferences appSp = SharePreference.get(MainActivity.this, AppSharePreferences.class);
         Accounts accounts = new Accounts();

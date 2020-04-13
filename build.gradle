@@ -1,8 +1,11 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    
+
     repositories {
+        maven {
+            url uri('repo')
+        }
         maven { url "https://repo.eclipse.org/content/repositories/paho-snapshots/" }
         maven { url "http://maven.aliyun.com/nexus/content/repositories/releases" }
         mavenCentral()
@@ -10,6 +13,7 @@ buildscript {
         jcenter()
     }
     dependencies {
+        classpath 'com.easy.plugin:gradleplugin:1.0.0'
         classpath 'com.android.tools.build:gradle:3.2.1'
         classpath 'javax.inject:javax.inject:1@jar'
         classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
